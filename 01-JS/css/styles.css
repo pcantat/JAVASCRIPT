@@ -1,0 +1,10 @@
+body{
+    background: rgb(77, 76, 76);
+    color: #d1cbcb;
+}
+@font-face{  
+    font-family: 'Cabin';
+    font-style: normal;
+    font-weight: 400;
+    src: local("Cabin Regular"), local("Cabin-Regular"), url("https://themes.googleusercontent.com/static/fonts/cabin/v4/JEgmtEDzc-IH8jBshQXrYA.woff") format("woff");
+}
