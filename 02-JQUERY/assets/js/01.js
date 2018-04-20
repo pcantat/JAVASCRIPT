@@ -43,3 +43,6 @@ $(()=>{
     $('#TexteEnJquery').html("Mon Texte en JQ");
 
 });
+
+
+// ====================
