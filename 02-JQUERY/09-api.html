@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercice 4</title>
+</head>
+<body>
+       
+    <form id="MonFormulaire" method="post" action="connexion.php">
+        <input type="text" name="email" placeholder="Email" /><br /><br />
+        <input type="text" name="mdp" placeholder="Mot de Passe" /><br /><br />       
+        <input type="submit" id="submit" value="Connexion" />
+    </form>
+    
+    <!-- CONSIGNE : Avec l'aide de jQuery, vous devrez :
+    
+        1. A l'aide d'une API de Géolocalisation, vous affichez dans un 
+        paragraphe du formulaire l'adresse IP ainsi que la Ville et/ou 
+        Code Postal de l'utilisateur connecté.
+        
+        Utilisation de JSONP : geoip.nekudo.com || ipapi.co
+     
+    -->
+   
+    <!-- Intégration de jQuery -->
+    <script
+    src="https://code.jquery.com/jquery-3.1.1.min.js"
+    integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+    crossorigin="anonymous"></script>
+    
+    <script>
+        function foo(data) {
+            document.write('<br>' + '<br>'+ ' - ' + "Ville : " , data.city + '<br>');
+            document.write(' - ' + "Pays : ",        data.country.name + '<br>');
+            document.write(' - ' + "Latitude : ",    data.location.latitude + '<br>');
+            document.write(' - ' + "Longitude : ",   data.location.longitude + '<br>');
+        
+            console.log(data);
+            console.log(data.city);
+            console.log(data.country.name);
+            console.log(data.location.latitude);
+            console.log(data.location.longitude);
+        }
+
+    </script>
+    
+    <script src="http://geoip.nekudo.com/api?callback=foo"></script>
+
+    <script type="text/javascript">
+        var afficheip_s = "script";
+        var afficheip_sc = "AfficheIP.php";
+        document.write('<'+afficheip_s+' type="text/javascript" src="http://www.afficheip.net/scripts/'+afficheip_sc+'?'+'color=000000&bg=FFFFFF&taille=21&police=Verdana"></'+afficheip_s+'>');
+        </script>
+        <noscript>
+        <a href="http://www.afficheip.net" title="Afficher votre adresse ip">Afficher votre adresse ip</a>
+        </noscript>
+    
+</body>
+</html>
