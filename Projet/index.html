@@ -1,5 +1,6 @@
-<!doctype html>
-<html class="no-js" lang="fr">
+<!DOCTYPE html>
+
+<html  lang="fr">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -12,7 +13,7 @@
         <!-- Place favicon.ico in the root directory -->
 
         <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
+        <!-- <link rel="stylesheet" href="css/main.css"> -->
         <link rel="stylesheet" href="css/styles.css">
 
     </head>
@@ -23,60 +24,35 @@
 
         <!-- Add your site or application content here -->
         <!-- <p>Hello world! This is HTML5 Boilerplate.</p> -->
-
-        <header>
-            <nav>
-                        <!-- 1. ****  Mettre le Menu Logo + MAC + iPad + Iphone etc... -->
-
-                <div class="main-category">
-                              
-                      <a   target="_self"  >Mi Phones</a>
-                                         
-                        <div class="container">
-                                                      
-                            <div class="main-product">
-                                <a class="product-image"  href="http://www.mi.com/en/mi-a1/"  target="_blank" >
-                                    <img src="/img/menu/Accessoires.png"  alt="Mi A1" width="140" height="140">
-                                </a>
-
-                            </div>
-                                
-                            <div class="main-product">
-                                <a class="product-image"  href="http://www.mi.com/en/mi6/"  target="_self" >
-                                    <img src="" data-src="//i01.appmifile.com/webfile/globalimg/PNG/Mi-6-black140.png?width=140&height=140" alt="Mi 6" width="140" height="140">
-                                </a>
-                                <a class="product-name"  href="http://www.mi.com/en/mi6/"  target="_self" >Mi 6</a>
-                                <span class="product-price"></span>
-                            </div>
-                            
-                            <div class="main-product">
-                                <a class="product-image"  href="http://www.mi.com/en/max2/"  target="_self" >
-                                    <img src="" data-src="//i01.appmifile.com/webfile/globalimg/PNG/max2-biack140.png?width=140&height=140" alt="Mi Max 2" width="140" height="140">
-                                </a>
-                                <a class="product-name"  href="http://www.mi.com/en/max2/"  target="_self" >Mi Max 2</a>
-                                <span class="product-price"></span>
-                            </div>
-                            
-                            <div class="main-product">
-                                <a class="product-image"  href="http://www.mi.com/en/mix/ "  target="_self" >
-                                        <img src="" data-src="//i01.appmifile.com/webfile/globalimg/en/cms/MIX-140.jpg?width=140&height=140" alt="Mi Mix" width="140" height="140">
-                                </a>
-                                <a class="product-name"  href="http://www.mi.com/en/mix/ "  target="_self" >Mi Mix</a>
-                                <span class="product-price"></span>
-                            </div>
-                                
-                            <div class="main-product">
-                                <a class="product-image"  href="http://www.mi.com/en/list/"  target="_self" >
-                                    <img src="" data-src="//i01.appmifile.com/webfile/globalimg/Shera/en-nav-more.png?width=140&height=140" alt="More" width="140" height="140">
-                                </a>
-                                <a class="product-name"  href="http://www.mi.com/en/list/"  target="_self" >More</a>
-                                <span class="product-price"></span>
-                            </div>
-                        </div>
-                    </div>
-            </nav>
-                        <!-- 2. ****  Mettre les images en haut de la page au niveau du menu -->
-        </header>
+        
+        
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">
+                      <i class="fab fa-apple"></i> 
+                    </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="#">Disabled</a>
+                </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              </form>
+            </div>
+          </nav>
 
         <script src="js/vendor/modernizr-3.5.0.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
@@ -84,11 +60,18 @@
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
 
-        <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-        <script>
-            window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
-            ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
-        </script>
-        <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+        
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+
+
     </body>
 </html>
+
+
+            
