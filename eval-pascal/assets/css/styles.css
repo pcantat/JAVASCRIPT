@@ -1,0 +1,135 @@
+/* 
+*********************
+*        Logo       *
+*********************
+*/
+
+.logo{
+    font-family: 'Merienda', cursive;
+    background-color: #061339;
+    color: white;
+    height: 50px;
+    
+}
+/* 
+******************************************
+*      Le Texte du  Logo                 *
+******************************************
+*/
+.logo-texte {
+    margin-left: 25%;
+    padding: 10px 0;
+}
+/* 
+*****************************
+*          Slogan           *
+*****************************
+*/
+.slogan{
+    background-image: url("../../assets/img/background.jpg");
+    height: 200px;
+    text-align: center;
+}
+/* 
+******************************************
+*          Le Texte du  Slogan           *
+******************************************
+*/
+.slogan-texte {
+    font-family: 'Merienda', cursive;
+    font-size: 55px;
+    padding: 40px;
+    color: white;
+    size: 20px;
+}
+
+/* 
+********************************
+*          Projecteur          *
+********************************
+*/
+#projecteur{
+    height: 600px;
+
+}
+.my-1 .mr-2{
+    font-weight: 400;
+}
+/* 
+********************************
+*         Bas du Site          *
+********************************
+*/
+.bas-site{
+    background: #dddd;
+}
+.bas-site h1 {
+    font-family: 'Merienda', cursive;
+}
+
+/* 
+********************************
+*        Album Photos          *
+********************************
+*/
+
+.album {
+    margin-top: 40px;
+}
+.carousel-inner{
+    width: 720px;
+}
+
+/* 
+********************************
+*        Section Footer        *
+********************************
+ */
+
+.basdepage{
+    text-align: right;
+    background-color: #061339;
+    color: white;
+    padding-right: 10px;
+    font-size: 15px;
+    height: 200px;
+}
+
+
+
+/*
+####################################################
+#           M E D I A  Q U E R I E S
+####################################################
+*/
+ 
+
+ 
+/* Small devices (landscape phones, 544px and up) */
+@media (min-width: 544px) {  
+
+}
+ 
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {  
+
+}
+ 
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+ 
+}
+ 
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  
+    
+}
+ 
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Custom media queries
+*/
+ 
+@media (max-width: 575px) {
+ 
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>[var.dossier]</title>
+</head>
+<body>
+<a name="haut"></a>
+<table width="100%" align="center">
+  <tr>
+    <td width="5%" rowspan="7" class="borduregauche"></td>
+    <td height="21" class="bordure"></td>
+    <td width="5%" rowspan="7" class="borduredroite"></td>
+  </tr>
+  <tr>
+    <td height="30" class="borduretitre"><table border="0" align="center"><tr><td><h1>Les images de [var.dossier]</h1></td><td id="red">([var.totalimg])</td></tr></table></td>
+  </tr>
+  <tr>
+    <td height="21" class="bordure"></td>
+  </tr>
+  <tr>
+    <td align="center" class="tableau"><table align="center" border="0" cellpadding="2" cellspacing="0" width="100%">
+      <tbody>
+        <tr>
+          <td width="100" colspan="6"><div align="center">[bx_1.image;htmlconv=no;block=td]<br />
+          [bx_1.detail;htmlconv=no]</div></td>
+          <td width="100"><div align="center">[bx_2.image;htmlconv=no;block=td;.]<br />
+          [bx_2.detail;htmlconv=no]</div></td>
+          <td width="100"><div align="center">[bx_3.image;htmlconv=no;block=td;.]<br />
+          [bx_3.detail;htmlconv=no]</div></td>
+          <td width="100"><div align="center">[bx_4.image;htmlconv=no;block=td;.]<br />
+          [bx_4.detail;htmlconv=no]</div></td>
+          [bx;block=tr;serial]
+        </tr>
+        <tr>
+          <td valign="middle"><div align="center"></div></td>
+          <td colspan="2" class="text-mini" valign="middle"><div align="center"><font color="#666666">Cette ligne est optionnelle, elle<br />
+            premet de d&eacute;finir la case vide.</font></div></td>
+          <td valign="middle"><div align="center"></div></td>
+          <td valign="middle"><div align="center"></div></td>
+          <td valign="middle">              <p align="center"><span class="text-mini">[bx_0;block=td]</span> <br />
+                [bx;block=tr;serial]</p></td></tr>
+      </tbody>
+    </table>
+	</td>
+  </tr>
+  <tr>
+    <td height="21" class="bordure"></td>
+  </tr>
+  <tr>
+    <td height="21" class="borduretitre" align="center"><h1>[blk1;block=begin][blk1.val;htmlconv=no][blk1;block=end]</h1></td>
+  </tr>
+  <tr>
+    <td height="21" class="bordure"></td>
+  </tr>
+</table>
+<br /><br />
+<div align="center">
+  <input type="button" value="Fermer " onclick="self.close()" />
+</div>
+<br />
+<br />
+<br />
+</body>
+</html>
