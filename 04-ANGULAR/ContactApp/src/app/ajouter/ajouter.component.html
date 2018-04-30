@@ -1,0 +1,58 @@
+<form #form="ngForm"
+  (ngSubmit)="submitContact()">
+
+<!--
+  Grâce à l'identifiant  #form
+  plus haut, je peux connaitre
+  l'état de validation de mon
+  formulaire.
+ -->
+  
+  <h5 class="text-center m-4">
+    Ajouter un Contact
+  </h5>
+
+  <pre>
+    {{ form.valid }}
+    {{ nouveauContact | json}}
+  </pre>
+
+  <!--Nom Complet du Contact-->
+  <div class="form-group">
+    <input type="text" class="form-control" required placeholder="Saisissez Votre Nom Complet..."
+    name="fullname"
+    #fullname="ngModel"
+    [(ngModel)]="nouveauContact.name"
+    [class.is-invalid]="fullname.touched && full.invalid"
+    [class.is-valid]="full.valid" >
+    <div class="invalid-feedback" >
+      Vous devez saisir votre nom complet.
+    </div>
+    <div class="valid-feedback" >
+      Correct !!
+    </div>
+
+  <!-- Email -->
+  <div class="form-group">
+    <input type="email" required
+       class="form-control"
+       placeholder="Saisissez votre email..."
+       name="email" #email="ngModel"
+       [(ngModel)]="nouveauContact.email"
+       [class.is-invalid]="email.touched && email.invalid"
+       [class.is-valid]="email.valid"
+       pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,5}$">
+    <div class="invalid-feedback">
+      Vous devez saisir votre email.
+    </div>
+    <div class="valid-feedback">
+      Correct
+    </div>
+  </div>
+
+<!--Bouton Submit du Contact-->
+  <button class="btn btn-block btn-primary"
+    [disabled]="form.invalid">
+    Ajouter le Contact
+  </button>
+</form>
