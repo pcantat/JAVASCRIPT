@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
-import {FormsModule} from '@angular/forms';
+import {FormGroup, FormsModule} from '@angular/forms';
 import { ProfilComponent } from './profil/profil.component';
 import { AjouterComponent } from './ajouter/ajouter.component';
 import {HttpClientModule} from '@angular/common/http';

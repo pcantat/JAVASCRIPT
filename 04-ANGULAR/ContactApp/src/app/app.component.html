@@ -4,9 +4,8 @@
       <div class="navbar-header">
         <a href="/" class="navbar-brand">
           <!-- Avec l'expression {{ }}
-               j'affiche le contenu de la
-               variable dans l'app.
-           -->
+          j'affiche le contenu de la
+          variable dans l'app. -->
           {{ title }}
         </a>
       </div>
@@ -14,8 +13,8 @@
   </header>
 
   <div class="row">
-    <div>
-      <div class="col-sm-4">
+    <div class="col-sm-4">
+      <div>
         <ul class="list-group">
           <a *ngFor="let contact of mesContacts"
              (click)="choisirContact(contact)"
@@ -26,15 +25,14 @@
           </a>
         </ul>
       </div>
-    </div>
-  </div>
       <app-ajouter (unContactEstCree)="ajouterContactDansListe($event)"></app-ajouter>
       <!--<pre>{{ mesContacts | json }}</pre>-->
-
-    <div class="col-sm-8">
-      <app-profil [contact]="contactActif"> </app-profil>
     </div>
-    <footer class="text-center">
-      Copyright &copy; 2018 - WF3 Les Mureaux.
-    </footer>
-
+    <div class="col-sm-8">
+      <app-profil [contact]="contactActif"></app-profil>
+    </div>
+  </div>
+  <footer class="text-center">
+    Copyright &copy; 2018 - WF3 Les Mureaux.
+  </footer>
+</div>

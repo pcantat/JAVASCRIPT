@@ -2,16 +2,15 @@ import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 import {Contact} from '../models/contact';
 
 @Component({
-  selector:    'app-ajouter',
+  selector: 'app-ajouter',
   templateUrl: './ajouter.component.html',
-  styleUrls: [ './ajouter.component.css']
+  styleUrls: ['./ajouter.component.css']
 })
 export class AjouterComponent implements OnInit {
 
-  @Output() unContactEstCree = new EventEmitter ();
-  nouveauContact: Contact = new Contact ();
+  @Output() unContactEstCree = new EventEmitter();
+  nouveauContact: Contact = new Contact();
   active = true;
-
   constructor() { }
 
   ngOnInit() {
@@ -19,21 +18,30 @@ export class AjouterComponent implements OnInit {
 
   /**
    * Fonction appelée après le
-   * la soumission du formulaire
-   * */
+   * submit du Formulaire.
+   */
   submitContact() {
-/**
- * Lorsque mon formulaire est soumis, j'émet un
- * évènement qui sera écouté par ma application,
- * et qui récupérera les données du nouveau contact.
- * */
-    this.unContactEstCree.emit( {leContact: this.nouveauContact});
 
-// -- Rénitialiser le Nouveau Contact :
-    this.nouveauContact= new Contact();
-// -- Réinitialiser du Formulaire :
+    /**
+     * Lorsque mon formulaire est soumis, j'émet un
+     * évènement qui sera écouté par mon application,
+     * et qui récupèrera les données du nouveau contact.
+     */
+    this.unContactEstCree.emit({ leContact: this.nouveauContact });
+
+    // -- Réinitialiser le Nouveau Contact
+    this.nouveauContact = new Contact();
+
+    // -- Réinitialisation du Formulaire
     this.active = false;
-    setTimeout( () => this.active = true, 0 );
+    setTimeout(() => this.active = true, 0);
+
+    /**
+     * EXPLICATION :
+     * Je passe mon formulaire à false, puis
+     * immediatement à true, ce qui a pour
+     * conséquence de le détruire dans le DOM
+     * puis le re-créer...
+     */
   }
 }
-
